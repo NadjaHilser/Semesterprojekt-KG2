@@ -7,6 +7,28 @@
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 
+		<script type="text/javascript" src="scripts/libaries/jquery.js"></script>
+
+		<script>
+		$(document).ready(function() {
+			$("header ul li a").click(function() {
+				$("header ul li a").removeClass("active");
+				$(this).addClass("active");
+			});
+
+
+			/*$('a[href^=#]').on('click', function(e) {
+				var href = $(this).attr('href');
+				$('main').animate({
+					scrollTop:$(href).offset().top-120
+				}, 'slow');
+				e.preventDefault();
+			}); */
+		});
+
+
+		</script>
+
 	</head>
 
 	<body>
@@ -14,71 +36,872 @@
 		<header>
 			<h1>EISHOCKEY</h1>
 			<ul>
-				<li><a href="#" class="active">A</a></li>
-				<li><a href="#" class="active">B</a></li>
-				<li><a href="#" class="active">C</a></li>
-				<li><a href="#" class="active">D</a></li>
-				<li><a href="#" class="active">E</a></li>
-				<li><a href="#" class="active">F</a></li>
-				<li><a href="#" class="active">G</a></li>
-				<li><a href="#" class="active">H</a></li>
-				<li><a href="#" class="active">I</a></li>
-				<li><a href="#" class="active">J</a></li>
-				<li><a href="#" class="active">K</a></li>
-				<li><a href="#" class="active">L</a></li>
-				<li><a href="#" class="active">M</a></li>
-				<li><a href="#" class="active">N</a></li>
-				<li><a href="#" class="active">O</a></li>
-				<li><a href="#" class="active">P</a></li>
-				<li><a href="#" class="active">Q</a></li>
-				<li><a href="#" class="active">R</a></li>
-				<li><a href="#" class="active">S</a></li>
-				<li><a href="#" class="active">T</a></li>
-				<li><a href="#" class="active">U</a></li>
-				<li><a href="#" class="active">V</a></li>
-				<li><a href="#" class="active">W</a></li>
-				<li><a href="#" class="active">X</a></li>
-				<li><a href="#" class="active">Y</a></li>
-				<li><a href="#" class="active">Z</a></li>
+				<li><a href="#a">A</a></li>
+				<li><a href="#b">B</a></li>
+				<li><a href="#c">C</a></li>
+				<li><a href="#d">D</a></li>
+				<li><a href="#e">E</a></li>
+				<li><a href="#f">F</a></li>
+				<li><a href="#g">G</a></li>
+				<li><a href="#h">H</a></li>
+				<li><a href="#i">I</a></li>
+				<li><a href="#j">J</a></li>
+				<li><a href="#k">K</a></li>
+				<li><a href="#l">L</a></li>
+				<li><a href="#m">M</a></li>
+				<li><a href="#n">N</a></li>
+				<li><a href="#o">O</a></li>
+				<li><a href="#p">P</a></li>
+				<li><a href="#q">Q</a></li>
+				<li><a href="#r">R</a></li>
+				<li><a href="#s">S</a></li>
+				<li><a href="#t">T</a></li>
+				<li><a href="#u">U</a></li>
+				<li><a href="#v">V</a></li>
+				<li><a href="#w">W</a></li>
+				<li><a href="#x">X</a></li>
+				<li><a href="#y">Y</a></li>
+				<li><a href="#z">Z</a></li>
 			</ul>
 		</header>
 
 		<main>
-			<!-- a -->
-			<div class="buchstabe clearfix">
+			<!-- A -->
+			<div class="gesReihe A clearfix" id="a">
+				<div class="Vorspalte">
+					<h3>A</h3>
+				</div>
 				<div class="spalte">
-					<h2>Text</h2>
-					<p>Text</p>
+					<h2>Anspielpunkte</h2>
+					<div class="Strich">
+					</div>
+					<p>Auf dem Spielfeld gibt es insgesamt neun Anspielpunkte oder -kreise, auch Bullykreise genannt. An diesen Stellen wird der Puck nach einer Unterbrechung via Bully wieder in das Spiel gebracht. Neben dem Anspielpunkt in der Spielfeldmitte existieren jeweils zwei in den Verteidigungs- bzw. Angriffszonen, die einen Radius von 4,5 Meter haben. Zudem gibt es vier weitere Anspielpunkte in der Mittelzone, die im Gegensatz zu den anderen nicht von einem Kreis umgeben sind und sich mit einem Abstand von 1,5 Metern von jeder der beiden blauen Linien befinden.</p>
+
+					<h2 class="Abstand">Assist</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Zuspiel, das zu einem Tor führt. Also eine Torvorlage.
+					</p>
+
+					<h2 class="Abstand">Aufbaupass</h2>
+					<div class="Strich">
+					</div>
+					<p>Der einleitende Spielzug eines Angriffs, wird üblicherweise von einem Verteidiger aus der eigenen Zone heraus gespielt.
+					</p>
 				</div>
 
 				<div class="spalte">
-					<h2>Text</h2>
-					<p>Text</p>
+					<h2>Auszeit (time out)</h2>
+					<div class="Strich">
+					</div>
+					<p>Beim Eishockey hat jede Mannschaft das Recht, pro Spiel eine Auszeit von 30 Sekunden zu nehmen. Oft wird die Time-Out von der Mannschaft genutzt, die kurz vor Spielende knapp in Rückstand liegt, um den Torwart herauszunehmen und zusätzlich einen Feldspieler auf das Eis zu bringen.</p>
+
+					<h2>Attacking Zone</h2>
+					<div class="Strich">
+					</div>
+					<p>Auch als gegnerische Zone bezeichnet, jenes Drittel des Spielfeldes, in dem das Tor des Gegners steht. Das Gegenteil ist die Verteidigungszone.</p>
+
+					<h2>All Star Game</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Show-Spiel, das mit den vom Publikum oder von Fachleuten gewählten besten Spieler einer Liga ausgetragen wird.</p>
 				</div>
 
 				<div class="spalte">
-					<h2>Text</h2>
-					<p>Text</p>
+					<h2>Abseits im Hockey (Offside)</h2>
+					<div class="Strich">
+					</div>
+					<p>Auf Abseits (Offside) wird erkannt, wenn ein Spieler beim Spiel auf das gegnerische Tor die blaue Linie zwischen neutraler- und Angriffszone vor dem Puck überschreitet (beide Schlittschuhe befinden sich über der Linie) und die Scheibe die blaue Linie im vollen Umfang überschritten hat. Es darf sich zwischen dem puckführenden Spieler und Tor kein weiterer angreifender Spieler befinden. Verlassen alle Angreifer das Angriffsviertel ohne den Puck zu berühren, kann das Abseits aufgehoben werden. Auch wenn sich ein angreifender Spieler in der Angriffszone befindet und die Scheibe von einem verteidigenden Spieler wieder zurück in die Angriffszone
+					befördert wird, handelt es sich nicht um eine Abseitsstellung. Ansonsten müssen alle angreifenden Spieler die Angriffszone verlassen, bevor der Puck in diese Zone gespielt werden darf. Wenn die angreifenden Spieler die Angriffszone ohne Puck-Berührung verlassen, gibt es keine Unterbrechung. Ansonsten wird bei Abseits das Spiel umgehend unterbrochen und bei einem Anspielpunkt fortgesetzt.</p>
 				</div>
 			</div>
 
-			<!-- b -->
-			<div class="buchstabe clearfix">
+			<!-- B -->
+			<div class="gesReihe B clearfix" id="b">
+				<div class="Vorspalte">
+					<h3>B</h3>
+				</div>
 				<div class="spalte">
-					<h2>Text</h2>
-					<p>Text</p>
+					<h2>Boxplay</h2>
+					<div class="Strich">
+					</div>
+					<p>Das sogenannte Boxplay bezeichnet das Gegenteil vom Power-Play und betrifft die in Unterzahl spielende
+					Mannschaft. Sie versucht einen Torerfolg der numerisch überlegenen Mannschaft zu verhindern und bedient sich hierfür einer bestimmten Spielformation. Die vier verbleibenden Feldspieler stellen sich in der Regel im Viereck vor dem eigenen Tor auf, um so die gegnerischen fünf Spieler bestmöglich kontrollieren zu können.</p>
+
+					<h2>Big Save</h2>
+					<div class="Strich">
+					</div>
+					<p>Eine vom Keeper vereitelte Großchance. Vor allem wenn ein torgefährlicher Schuss in einer spielentscheidende Spielsituation pariert wird, fällt die Bezeichnung Big Save.</p>
+
+					<h2>Backhand Shot</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Schuss oder Pass, den ein Spieler mit der Rückseite seines Schlägers abgibt. Er ist weniger kräftig und präzise als ein normaler Schuss, wird jedoch oft bei überraschenden Spielzügen und Torschüssen angewandt.</p>
+
+					<h2>Bande</h2>
+					<div class="Strich">
+					</div>
+					<p>Die Spielfeldbegrenzung. Sie besteht im Regelfall im unteren Teil aus Holz oder Kunststoff, worauf zum zusätzlichen Schutz eine Wand aus Plexiglas errichtet wird. Der untere Teil der Bande wird durch das Kick Plate gebildet.</p>
+
+					<h2>Blaue Linie</h2>
+					<div class="Strich">
+					</div>
+					<p>Quer über die Eisfläche verlaufende Spielfeldmarkierung, die das Mitteldrittel und die beiden Verteidigungs- bzw. Angriffszonen voneinander trennt.</p>
+
 				</div>
 
 				<div class="spalte">
-					<h2>Text</h2>
-					<p>Text</p>
+					<h2>Bauerntrick (Wrap-Arround)</h2>
+					<div class="Strich">
+					</div>
+					<p>Beschreibt den Versuch eines angreifenden Spielers, die Seite hinter dem gegnerischen Tor schnell zu wechseln und den Puck eng am Pfosten vorbei ins Tor zu schießen. Der Torwart vermutet den Gegner auf der anderen Seite des Tores. Meist kann der Goalie den Bauerntrick aber vereiteln und ist mit seinem Schoner zur Stelle.</p>
+
+					<h2>Blueliner</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein angreifender Spieler, der an der blauen Linie des Angriffszone positioniert ist. Meist handelt es sich um Verteidiger, die vor allem mit Schlagschüssen für Torgefahr sorgen.</p>
+
+					<h2>Backcheck</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Teil der Verteidigungsarbeit bei schnellen Gegenangriffen (Rushes), bei der ein Spieler einen gegnerischen Spieler bei seinem Weg in die eigene Verteidigungszone zu stören versucht.</p>
+
+					<h2>Butterfly-Stil</h2>
+					<div class="Strich">
+					</div>
+					<p>Der heute gebräuchlichste Spielstil bei Torhütern, der durch das Abspreizen der Beinschoner vom Körper gekennzeichnet ist, wodurch der untere Teil des Tores effektiv vor flach angetragenen Schüssen geschützt werden kann.</p>
+
+					<h2>Big Save</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein vom Torwart gehaltener torgefährlicher Schuss, oft in einer entscheidendenSpielsituation.</p>
 				</div>
 
 				<div class="spalte">
-					<h2>Text</h2>
-					<p>Text</p>
+					<h2>Bully (Face off)</h2>
+					<div class="Strich">
+					</div>
+					<p>Mit dem Bully wird das Spiel zu Spielbeginn, nach einem Torerfolg oder nach einer Unterbrechung wieder aufgenommen. Es handelt sich um eine Art Anstoß. Der Bully, im Englischen Face off genannt, erfolgt in einem der Anspielpunkte. Eventuell in einem der beiden Bullykreise in den Endzonen oder einem der vier Bullykreise in der neutralen Zone.
+					Beim Bully stehen sich zwei gegnerische Spieler am Anspielpunkt gegenüber und der Schiedsrichter wirft den Puck auf den Bullypunkt. Die beiden Spieler versuchen, das Spielgerät zu erobern. Die anderen Spieler müssen außerhalb des Kreises auf ihrer Torseite stehen und dürfen erst nach dem Bully den Bullykreis betreten. Im Regelfall übernehmen die Linienrichter die Bullys, während der Hauptschiedsrichter die Aufgabe hat, auf eine regelkonforme Ausführung zu achten und gegebenenfalls das Spiel bei Regelverstoß zu unterbrechen. Lediglich die Bullys zu Beginn eines Drittels werden vom Schiedsrichter ausgeführt.</p>
+
+					<h2>Backup goalie</h2>
+					<div class="Strich">
+					</div>
+					<p>Der zweite oder dritte Torwart einer Mannschaft hinter der Nummer ein, welcher im Regelfall wenig Eiszeit hat.</p>
+
+					<h2>Breakaway</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein schneller Gegenangriff, meist nach einer Unachtsamkeit oder nach Puckverlust der gegnerischen Mannschaft.</p>
+
+					<h2>Blade</h2>
+					<div class="Strich">
+					</div>
+					<p>1. Der untere, abgewinkelte Teil des Eishockeyschlägers, der Kontakt mit dem Puckund der Eisfläche hat.
+					2. Die Kufe des Schlittschuhs.</p>
 				</div>
 			</div>
+
+			<!-- C -->
+			<div class="gesReihe B clearfix" id="c">
+				<div class="Vorspalte">
+					<h3>C</h3>
+				</div>
+				<div class="spalte">
+					<h2>Catch glove</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Teil der Ausrüstung des Torwarts.</p>
+
+					<h2>Clearing</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Herausspielen der Scheibe aus der eigenen Verteidigungszone zur Entlastung während eines gegnerischen Angriffs, beispielsweise im Powerplay. Der Gegner muss danach einen neuen Angriff aufbauen, um ein Abseits zu verhindern.</p>
+
+					<h2>Crease</h2>
+					<div class="Strich">
+					</div>
+					<p>Als Crease wird der halbkreisförmige Bereich vor dem Tor bezeichnet (Torraum). Daneben gibt es auch den Referee‘s Crease an der Bande bei der Mittellinie, in dem der Schiedsrichter seine Entscheidungen bekannt gibt.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Center (oder Mittelstürmer)</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Angriffsspieler, der üblicherweise das Bully ausführt und die Spielzüge aufbaut.</p>
+
+					<h2>Corner</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Spielfeld im Bereich der vier Rundungen schräg hinter den Toren.</p>
+
+					<h2>Crosscheck</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein regelwidriger Check mit hohem Stock, bei dem kein Teil des Schlägers das Eis berührt. Er resultiert im Regelfall in einer Bankstrafe. Im Falle von Verletzungen kann das Vergehen auch eine Matchstrafe nach sich ziehen.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Checking</h2>
+					<div class="Strich">
+					</div>
+					<p>Jede Art von Störung eines angreifenden Gegenspielers durch Anrempeln oder ähnliches Vorgehen. Nur der scheibenführende Spieler darf gecheckt werden. Verboten sind allerdings Checks gegen den Kopf oder gegen die Bande.</p>
+
+					<h2>Coast to coast</h2>
+					<div class="Strich">
+					</div>
+					<p>Damit wird ein Spiel mit schnell abwechselnden Angriffen der beiden Teams bezeichnet, wodurch sich das Spielgeschehen schnell von einer Seite zur anderen und wieder zurück verlagert.</p>
+				</div>
+			</div>
+
+			<!-- D -->
+			<div class="gesReihe B clearfix" id="d">
+				<div class="Vorspalte">
+					<h3>D</h3>
+				</div>
+				<div class="spalte">
+					<h2>Defender</h2>
+					<div class="Strich">
+					</div>
+					<p>Defender sind Abwehrspieler. Die Hauptaufgabe der Defender ist es, die Tore des Gegners zu verhindern. Es stehen meist zwei Abwehrspieler pro Mannschaft auf dem Eis.</p>
+
+					<h2>Diving</h2>
+					<div class="Strich">
+					</div>
+					<p>Theatralisches Fallenlassen oder Vortäuschen einer Regelwidrigkeit nach einem Check oder sonstigen Angriff eines gegnerischen Spielers, um eine Strafzeit zu erzwingen. Diving kann jedoch umgekehrt zu einer Strafe wegen Unsportlichen Verhaltens führen.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Deke</h2>
+					<div class="Strich">
+					</div>
+					<p>Das An- oder Vortäuschen von Spielzügen durch einen angreifenden Spieler mit dem Ziel, die gegnerische Verteidigung auszuspielen.</p>
+
+					<h2>Draft</h2>
+					<div class="Strich">
+					</div>
+					<p>In nordamerikanischen Profi-Sportligen gebräuchliche Spieler-Lotterie, bei der die Mannschaften sich die Dienste vielversprechender Talente sichern.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Delayed penalty</h2>
+					<div class="Strich">
+					</div>
+					<p>Aufschub einer angezeigten gegnerischen Strafe bis zu jenem Moment, an dem die bestrafte Mannschaft in Puckbesitz gelangt. Während dieser Zeit kann das bestrafte Team kein Tor erzielen, weshalb der Gegner statt des Torwarts einen sechsten Feldspieler einsetzen kann, um eventuell schon vor Beginn des Powerplays ein Tor zu erzielen.</p>
+
+					<h2>Drop Pass</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Liegenlassen des Pucks in der Angriffsbewegung für einen nachfolgenden Spieler.</p>
+				</div>
+			</div>
+
+			<!-- E -->
+			<div class="gesReihe B clearfix" id="e">
+				<div class="Vorspalte">
+					<h3>E</h3>
+				</div>
+				<div class="spalte">
+					<h2>Eiszeit</h2>
+					<div class="Strich">
+					</div>
+					<p>Die Zeit, die ein Spieler insgesamt auf dem Eis verbringt. In einigen Ligen wie der National Hockey League werden darüber Statistiken geführt.</p>
+
+					<h2>Extra Attacker</h2>
+					<div class="Strich">
+					</div>
+					<p>Im Falle eines Rückstandes knapp vor Spielende wird oft der eigene Torwart durch einen weiteren Feldspieler ersetzt, den man Extra Attacker nennt, um die Chance auf den Ausgleich zu erhöhen. Das Risiko dabei liegt in der Möglichkeit, ein Empty Net Goal zu erhalten.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Enforcer (Goon)</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Spieler, der meist durch vernachlässigbare spielerische Fähigkeiten aber beeindruckende Körpermaße auffällt und nur ins Spiel gebracht wird, um Schlägereien zu provozieren oder gegnerische Spieler mit oft regelwidrigen Methoden zu attackieren.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Empty Net Goal</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Treffer ins leere Tor, wenn der Gegner den Torwart gegen einen zusätzlichen Feldspieler getauscht hat, um so die Chancen auf einen Ausgleich knapp vor Spielende zu erhöhen.</p>
+				</div>
+			</div>
+
+			<!-- F -->
+			<div class="gesReihe B clearfix" id="f">
+				<div class="Vorspalte">
+					<h3>F</h3>
+				</div>
+				<div class="spalte">
+					<h2>Feldspieler</h2>
+					<div class="Strich">
+					</div>
+					<p>Die Gesamtheit aller Spieler eines Teams exklusive der Torhüter.</p>
+
+					<h2>Freeze the puck</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Festhalten des Pucks durch den Torwart, meist in einer gefährlichen Situation. Es resultiert in einer Unterbrechung und einem Bully in der eigenen Verteidigungszone.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Forechecking</h2>
+					<div class="Strich">
+					</div>
+					<p>Frühzeitiges Stören eines gegnerischen Angriffes bzw. Behinderung des Aufbauspiels.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Forward (Angriffsspieler)</h2>
+					<div class="Strich">
+					</div>
+					<p>Die Angriffsspieler werden beim Eishockey im Gegensatz zu den Verteidigern mit dem vorangigen Ziel aufgestellt, den Puck ins gegnerische Tor zu befördern. Man unterscheidet dabei zwischen Außenstürmern, die auf der linken oder rechten Seite als Flügelspieler eingesetzt werden, sowie Mittelstürmern.</p>
+				</div>
+			</div>
+
+			<!-- G -->
+			<div class="gesReihe B clearfix" id="g">
+				<div class="Vorspalte">
+					<h3>G</h3>
+				</div>
+				<div class="spalte">
+					<h2>Gamesheet (Scoresheet)</h2>
+					<div class="Strich">
+					</div>
+					<p>Das von den Punktrichtern geführte Spielprotokoll der Spielgeschehnisse, in dem Tore, Strafzeiten, Schüsse und Ähnliches festgehalten werden. Es muss nach dem Spiel vom Schiedsrichter genehmigt werden und bildet die Grundlage für die im Eishockey gebräuchlichen Statistiken.</p>
+
+					<h2>Goals against average (GAA)</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Teil der Torhüterstatistik, der die Anzahl der durchschnittlich in 60 Minuten erhaltenen Tore angibt.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Gametying Goal</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Tor zum Unentschieden. Es taucht heute im Normalfall nicht mehr in den Statistiken auf, da Spiele, die nach der regulären Spielzeit unentschieden sind, in der Overtime oder im Penaltyschießen entschieden werden.</p>
+
+					<h2>Goalie</h2>
+					<div class="Strich">
+					</div>
+					<p>Der Torwart hat im Eishockey die Aufgabe, die Schüsse des Gegners abzuwehren und so den Torerfolg der gegnerischen Mannschaft zu verhindern.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Gamewinning Goal</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Siegestor. In der Statistik ist es gleichbedeutend mit jenem Treffer, der am Ende mehr erzielt wurde als es der gegnerischen Mannschaft gelang, unabhängig davon, wie viele Tore danach noch erzielt wurden.</p>
+
+					<h2>Gordie Howe Hattrick</h2>
+					<div class="Strich">
+					</div>
+					<p>Besondere Form des Hattricks, die aus einem Tor, einem Assist und einer Rauferei (große Bankstrafe) besteht.</p>
+				</div>
+			</div>
+
+			<!-- H -->
+			<div class="gesReihe B clearfix" id="h">
+				<div class="Vorspalte">
+					<h3>H</h3>
+				</div>
+				<div class="spalte">
+					<h2>Hooking</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Halten oder Behindern eines gegnerischen Spielers mit dem Stock. Es resultiert meist in einer kleinen Bankstrafe.</p>
+
+					<h2>Hattrick</h2>
+					<div class="Strich">
+					</div>
+					<p>Drei Tore eines einzelnen Spielers in einem Spiel. Werden die drei Tore unmittelbar aufeinanderfolgend erzielt, so spricht man von einem Natural Hattrick.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Holding</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Festhalten bzw. Behindern des gegnerischen Spielers. Es resultiert meist in einer kleinen Bankstrafe.</p>
+
+					<h2>High Sticking</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Angriff auf einen gegnerischen Spieler mit erhobenem Stock, im Regelfall gegen den Schulter- und Kopfbereich. Ebenso wird damit ein Schussversuch bei einem fliegenden Puck bezeichnet, wenn der Schläger höher dabei ist als die Querlatte des Tores.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Handpass</h2>
+					<div class="Strich">
+					</div>
+					<p>Irreguläres Zuspiel oder Beeinflussen des Pucks mit der Hand, das zu einer Unterbrechung und einem Bully führt. Das Fangen eines fliegenden Pucks ist erlaubt, solange keinerlei weiterer Spielzug erfolgt und der Puck unmittelbar danach wieder auf dem Eis platziert wird.</p>
+
+					<h2>Home Team</h2>
+					<div class="Strich">
+					</div>
+					<p>Die auf eigenem Eis spielende Mannschaft im Gegensatz zum Road Team, der Gastmannschaft.</p>
+				</div>
+			</div>
+
+			<!-- I -->
+			<div class="gesReihe B clearfix" id="i">
+				<div class="Vorspalte">
+					<h3>I</h3>
+				</div>
+				<div class="spalte">
+					<h2>Icing</h2>
+					<div class="Strich">
+					</div>
+					<p>Unerlaubter Weitschuss, bei dem der Puck die rote Mittellinie und die gegnerische Torlinie überschreitet, ohne dabei von einem weiteren Spieler berührt worden zu sein. Ein Icing resultiert in einer Spielunterbrechung und einem Bully in der Verteidigungszone des verursachenden Teams. Bei einer in Unterzahl spielenden Mannschaft ist die Icing-Regel für die Dauer der Strafzeit ausgesetzt.</p>
+				</div>
+			</div>
+
+			<!-- J -->
+			<div class="gesReihe B clearfix" id="j">
+				<div class="Vorspalte">
+					<h3>J</h3>
+				</div>
+				<div class="spalte">
+					<h2>Jersey</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Trikot eines Eishockeyspielers.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Jersey number</h2>
+					<div class="Strich">
+					</div>
+					<p>Die Nummer eines Spielers, die auf Rücken und Ärmel des Jerseys gedruckt ist. Möglich sind alle Zahlen zwischen 1 und 99, wobei viele Clubs über gesperrte Nummern verfügen, welche zur Ehrung verdienter früherer Spieler nicht mehr vergeben werden.</p>
+				</div>
+			</div>
+
+			<!-- K -->
+			<div class="gesReihe B clearfix" id="k">
+				<div class="Vorspalte">
+					<h3>K</h3>
+				</div>
+				<div class="spalte">
+					<h2>Kanadisch (Dump’n’Chase)</h2>
+					<div class="Strich">
+					</div>
+					<p>Eine Offensivstrategie, bei der der Puck zunächst in die gegnerische Zone geschossen wird. Die angreifende Mannschaft versucht dann, in den Rundungen hinter dem Tor in Puckbesitz zu gelangen. Der Begriff kanadisch verweist auf die Herkunft das Manövers</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Kurze Ecke</h2>
+					<div class="Strich">
+					</div>
+					<p>Die näher zum angreifenden bzw. scheibenführenden Spieler befindliche Seite des gegnerischen Tores.</p>
+				</div>
+			</div>
+
+			<!-- L -->
+			<div class="gesReihe B clearfix" id="l">
+				<div class="Vorspalte">
+					<h3>L</h3>
+				</div>
+				<div class="spalte">
+					<h2>Lange Ecke</h2>
+					<div class="Strich">
+					</div>
+					<p>Die weiter vom angreifenden bzw. scheibenführenden Spieler entfernte Seite des gegnerischen Tores.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Legpads</h2>
+					<div class="Strich">
+					</div>
+					<p>Sind die Beinschoner des Torwarts. Die an den Unterschenkeln getragenen Schützer dienen auch dem Aufhalten des Pucks.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Long change</h2>
+					<div class="Strich">
+					</div>
+					<p>Da in jedem Drittel die Seiten gewechselt werden, haben die Teams im zweiten Spielabschnitt den Nachteil, dass sich die Spielerbank näher zur Angriffszone befindet. Der längere Weg zur Bank erschwert das Wechseln während Spielphasen, in denen ein Team verstärkt Verteidigungsarbeit leisten muss, wie etwa in Unterzahl, und resultiert daher oft in übermäßig langen Shifts für die am Eis befindlichen Spieler, was als long change bezeichnet wird.</p>
+				</div>
+			</div>
+
+			<!-- M -->
+			<div class="gesReihe B clearfix" id="m">
+				<div class="Vorspalte">
+					<h3>M</h3>
+				</div>
+				<div class="spalte">
+					<h2>Major Penalty</h2>
+					<div class="Strich">
+					</div>
+					<p>Eine große Bankstrafe (fünf Minuten) resultiert in einer Strafzeit, während derer die Mannschaft des bestraften Spielers in Unterzahl agiert. Große Bankstrafen ziehen automatisch eine Spieldauer-Strafe nach sich.</p>
+
+					<h2>Minor Penalty</h2>
+					<div class="Strich">
+					</div>
+					<p>Eine kleine Bankstrafe (zwei Minuten) resultiert in einer Strafzeit, während derer die Mannschaft des bestraften Spielers in Unterzahl agiert.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Misconduct (Disziplinarstrafe)</h2>
+					<div class="Strich">
+					</div>
+					<p>Bei schweren Vergehen oder bei Kritik am Schiedsrichter kann zusätzlich zur kleinen Bankstrafe auch eine zehnminütige Disziplinarstrafe verhängt werden, die jedoch kein Unterzahlspiel für die betroffene Mannschaft nach sich zieht. Disziplinarstrafen werden auf dem Scoresheet mit dem englischen Begriff Misconduct eingetragen.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Matchstrafe</h2>
+					<div class="Strich">
+					</div>
+					<p>Eine Matchstrafe wird bei besonders schweren Vergehen verhängt und resultiert neben einer großen Bankstrafe und dem sofortigen Ausschluss auch in einer Sperre des betroffenen Spielers für folgende Spiele.</p>
+				</div>
+			</div>
+
+			<!-- N -->
+			<div class="gesReihe B clearfix" id="n">
+				<div class="Vorspalte">
+					<h3>N</h3>
+				</div>
+				<div class="spalte">
+					<h2>Net</h2>
+					<div class="Strich">
+					</div>
+					<p>Im amerikanischen Sprachraum übliche Bezeichnung für das Eishockeytor.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Neutrale Zone</h2>
+					<div class="Strich">
+					</div>
+					<p>Das mittlere Drittel des Spielfeldes.</p>
+				</div>
+			</div>
+
+			<!-- O -->
+			<div class="gesReihe B clearfix" id="o">
+				<div class="Vorspalte">
+					<h3>O</h3>
+				</div>
+				<div class="spalte">
+					<h2>Onetimer</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein direkt abgenommenes Zuspiel, meist als Schlagschuss ausgeführt.</p>
+
+					<h2>Overtime</h2>
+					<div class="Strich">
+					</div>
+					<p>Die Verlängerung bei Gleichstand nach der regulären Spielzeit, meist in der Länge von fünf Minuten mit vier gegen vier Feldspielern, bei Playoff-Spielen aber auch in herkömmlichen 20-Minuten-Einheiten und bei fünf gegen fünf. Die Overtime endet jedoch in jedem Fall mit dem ersten erzielten Tor.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>On the fly</h2>
+					<div class="Strich">
+					</div>
+					<p>Etwa während des laufenden Spiels, beispielsweise ein Spielerwechsel, der nicht während einer Unterbrechung stattfindet (fliegender Wechsel).</p>
+
+					<h2>Overload-System</h2>
+					<div class="Strich">
+					</div>
+					<p>Eine spezielle Spielart des Powerplays, bei der mittels einer asymmetrischen, also zu einer Seite der Eisfläche tendierenden Aufstellung und die dadurch entstehende Bündelung der Kräfte ein Vorteil gesucht wird.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Open Ice Check</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Check auf der offenen Eisfläche in einiger Entfernung von den Banden. Solche Checks resultieren oft in spektakulären Stürzen und ziehen in manchen Fällen auch Verletzungen nach sich, sind aber an sich regelkonform, sofern sie nicht gegen Kopf oder Hals gerichtet sind und mit angelegten Armen und ohne Einsatz des Schlägers erfolgen.</p>
+				</div>
+			</div>
+
+			<!-- P -->
+			<div class="gesReihe B clearfix" id="p">
+				<div class="Vorspalte">
+					<h3>P</h3>
+				</div>
+				<div class="spalte">
+					<h2>Playmaker</h2>
+					<div class="Strich">
+					</div>
+					<p>Der kreative Kopf eines Teams wird oft als Playmaker bezeichnet, wenn ein Großteil der Spielzüge durch ihn eingeleitet oder über ihn als Angelpunkt abgewickelt wird. Im Regelfall handelt es sich um einen Center.</p>
+
+					<h2>Period</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Spielabschnitt bei einem Eishockeyspiel von 20 Minuten dauer. Es gibt drei „Periods“, also 60 Minuten als Standardspiel.</p>
+
+					<h2>Pipe (Pfosten)</h2>
+					<div class="Strich">
+					</div>
+					<p>Die beiden Steher, die das linke bzw. rechte Ende des Tores markieren.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Penaltykiller</h2>
+					<div class="Strich">
+					</div>
+					<p>Spieler einer in Unterzahl agierenden Mannschaft. Das offensichtliche Gegenteil Powerplayer gibt es nicht.</p>
+
+					<h2>Penaltyschießen</h2>
+					<div class="Strich">
+					</div>
+					<p>Im Fall eines Unentschiedens nach der Overtime wird der Sieger meist durch ein Penaltyschießen ermittelt, bei dem die Spieler beider Mannschaften abwechselnd zu einem Penaltyschuss antreten, ähnlich dem Elfmeterschießen.</p>
+
+					<h2>Pfostenschuss</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Torschuss, der von einem der Pfosten abprallt.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Penaltykilling</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Spiel in Unterzahl nach einer verhängten Strafzeit gegen die eigene Mannschaft.</p>
+
+					<h2>Powerplay</h2>
+					<div class="Strich">
+					</div>
+					<p>Das Spiel in Überzahl bei einer gegen die gegnerische Mannschaft verhängten Strafzeit. Die Möglichkeit, ein Tor zu erzielen, ist hier besonders günstig.</p>
+
+					<h2>Plus/Minus</h2>
+					<div class="Strich">
+					</div>
+					<p>Statistik, welche die Anwesenheit eines Spielers auf dem Eis bei eigenen und gegnerischen Toren gegeneinander aufrechnet.</p>
+				</div>
+			</div>
+
+			<!-- Q -->
+			<div class="gesReihe B clearfix" id="q">
+				<div class="Vorspalte">
+					<h3>Q</h3>
+				</div>
+				<div class="spalte">
+					<h2>Querlatte</h2>
+					<div class="Strich">
+					</div>
+					<p>Der Querbalken, der das obere Ende des Tores markiert.</p>
+				</div>
+			</div>
+
+			<!-- R -->
+			<div class="gesReihe B clearfix" id="r">
+				<div class="Vorspalte">
+					<h3>R</h3>
+				</div>
+				<div class="spalte">
+					<h2>Rebound</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein unkontrolliert abprallender Schuss, der vom Torwart nicht festgehalten werden kann. Rebounds bieten der angreifenden Mannschaft eine gute Möglichkeit für weitere Schüsse, vor allem wenn sie direkt in den Slot zurückprallen. Vom Torhüter bewusst in die Rundungen hinter dem Tor abgelenkte Schüsse gelten nicht als Rebounds.</p>
+
+					<h2>Rote Linie</h2>
+					<div class="Strich">
+					</div>
+					<p>Quer verlaufende Spielfeldmarkierung, die die Mitte der Eisfläche markiert.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Road Team</h2>
+					<div class="Strich">
+					</div>
+					<p>Die auswärts antretende Mannschaft.</p>
+
+					<h2>Roughing (Übertriebene Härte)</h2>
+					<div class="Strich">
+					</div>
+					<p>Der Einsatz von unangemessenen Mitteln, meist bei der Verteidigungsarbeit. Es resultiert meist in einer kleinen Bankstrafe.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Roster</h2>
+					<div class="Strich">
+					</div>
+					<p>Der Kader einer Mannschaft.</p>
+
+					<h2>Rush (Schnellangriff)</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein schnell durchgeführter Angriff, meist nach einem Puckverlust des Gegners.</p>
+				</div>
+			</div>
+
+			<!-- S -->
+			<div class="gesReihe B clearfix" id="s">
+				<div class="Vorspalte">
+					<h3>S</h3>
+				</div>
+				<div class="spalte">
+					<h2>Save Percentage</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Teil der Torhüterstatistik, der Prozentsatz der gehaltenen an den insgesamt auf einen Torwart abgefeuerten Schüssen, auch Fangquote genannt.</p>
+
+					<h2>Shift</h2>
+					<div class="Strich">
+					</div>
+					<p>Die Einwechslung eines Spielers bzw. dessen Eiszeit bis zum nächsten Wechsel. Ein durchschnittlicher Spieler bringt es auf 15 bis 25 Shifts pro Spiel von jeweils etwa 30 bis 60 Sekunden Dauer.</p>
+
+					<h2>Stay-at-Home</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Spieler, im Regelfall ein Verteidiger, der vorwiegend defensiv agiert und dessen Schwerpunkt auf der Arbeit im eigenen Verteidigungsdrittel liegt.</p>
+
+					<h2>Starting Six</h2>
+					<div class="Strich">
+					</div>
+					<p>Die Anfangsformation einer Mannschaft, im Regelfall bestehend aus Torwart, zwei Verteidigern und drei Stürmern, welche das erste Bully einer Begegnung spielt.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Slapshot (Schlagschuss)</h2>
+					<div class="Strich">
+					</div>
+					<p>Eine spezielle Schusstechnik, bei der der Schütze mit dem Schläger weit ausholt und sein ganzes Gewicht in den Schuss legt. Mit dieser Technik werden die höchsten Puckgeschwindigkeiten erzielt (bis zu 170 km/h), jedoch wird damit einhergehend eine verringerte Zielgenauigkeit in Anspruch genommen. Häufig wird diese Schusstechnik von den Bluelinern angewandt.</p>
+
+					<h2>Screening</h2>
+					<div class="Strich">
+					</div>
+					<p>Der Versuch, dem gegnerischen Torhüter bei einem Angriff die Sicht zu verstellen, um die Chance auf einen Torerfolg zu erhöhen.</p>
+
+					<h2>Slot</h2>
+					<div class="Strich">
+					</div>
+					<p>Der Raum vor dem Tor, in dem die Chance, einen Schuss abzufälschen, einen Abpraller zu verwerten oder die Sicht des Torwarts zu behindern besonders groß ist.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Schlittschuhtor</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein irregulärer Treffer, der durch bewusstes Bewegen des Pucks mit Hilfe eines Schlittschuhs erzielt wurde.</p>
+
+					<h2>Shutout</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein vollständig absolviertes Spiel eines Torwarts ohne Gegentor.</p>
+
+					<h2>Spieldauer-Strafe</h2>
+					<div class="Strich">
+					</div>
+					<p>Wird bei größeren Vergehen vom Schiedsrichter zusammen mit einer großen Bankstrafe verhängt und ist gleichbedeutend mit dem Ausschluss des betroffenen Spielers vom laufenden Spiel. Die Spieldauer-Strafe ist nicht gleichbedeutend mit der Matchstrafe, bei der außerdem eine Sperre von mindestens einem weiteren Spiel ausgesprochen wird.</p>
+				</div>
+			</div>
+
+			<!-- T -->
+			<div class="gesReihe B clearfix" id="t">
+				<div class="Vorspalte">
+					<h3>T</h3>
+				</div>
+				<div class="spalte">
+					<h2>Three-on-one</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Angriff, meist in Form eines Breakaways, bei dem drei Spieler einer Mannschaft gegen nur einen Verteidiger fahren.</p>
+
+					<h2>Tripping</h2>
+					<div class="Strich">
+					</div>
+					<p>Regelwidrige Attacke gegen die Beine eines gegnerischen Spielers mit dem Stock oder dem eigenen Bein.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Time Out</h2>
+					<div class="Strich">
+					</div>
+					<p>Eine dreißig Sekunden andauernde Spielunterbrechung, die vom jeweiligen Trainer eines Teams veranlasst werden kann, um das taktische Vorgehen zu besprechen. Jedes Team verfügt über ein Timeout pro Spiel.</p>
+
+					<h2>Trash talk</h2>
+					<div class="Strich">
+					</div>
+					<p>Wortwechsel auf dem Eis mit dem Ziel, einen gegnerischen Spieler zu provozieren und seine Konzentration zu stören.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Trapezoid</h2>
+					<div class="Strich">
+					</div>
+					<p>Bezeichnung des Bereichs jenseits der Torlinie hinter dem Tor in der nordamerikanischen National Hockey League. Spielt der Torwart den Puck außerhalb dieses Bereichs, erhält er eine Strafe wegen Spielverzögerung.</p>
+
+					<h2>Trapper (Fanghandschuh)</h2>
+					<div class="Strich">
+					</div>
+					<p>Ein Teil der Ausrüstung des Torwarts.</p>
+				</div>
+			</div>
+
+			<!-- U -->
+			<div class="gesReihe B clearfix" id="u">
+				<div class="Vorspalte">
+					<h3>U</h3>
+				</div>
+				<div class="spalte">
+					<h2>Ugly Goal</h2>
+					<div class="Strich">
+					</div>
+					<p>Damit werden Tore bezeichnet, die nicht durch das Herausspielen von Chancen erzielt werden, sondern durch unglückliche Zufälle oder auch Nachstochern, wenn der Torwart den Puck nicht unter Kontrolle bringt. Alternativ auch als garbage goal (etwa Müll-Tor) bezeichnet.</p>
+				</div>
+			</div>
+
+			<!-- V -->
+			<div class="gesReihe B clearfix" id="v">
+				<div class="Vorspalte">
+					<h3>V</h3>
+				</div>
+				<div class="spalte">
+					<h2>Verteidigungszone</h2>
+					<div class="Strich">
+					</div>
+					<p>Auch als eigene Zone bezeichnet, jenes Drittel des Spielfeldes, in dem sich das eigene Tor befindet.</p>
+				</div>
+			</div>
+
+			<!-- W -->
+			<div class="gesReihe B clearfix" id="w">
+				<div class="Vorspalte">
+					<h3>W</h3>
+				</div>
+				<div class="spalte">
+					<h2>Wayne‘s Office</h2>
+					<div class="Strich">
+					</div>
+					<p>Der Raum hinter dem gegnerischen Tor, benannt nach der Eishockey-Legende Wayne Gretzky, der von dort aus viele erfolgreiche Angriffe einleitete.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Winger (Angriffsspieler)</h2>
+					<div class="Strich">
+					</div>
+					<p>Diese Spieler stehen meist Außen. Je nach Taktik verteilt der Center die Pucks an die beiden Flügelstürmer, die dann einen Angriff zum Abschuss bringen.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>W-L-T</h2>
+					<div class="Strich">
+					</div>
+					<p>In Statistiken die Kurzform für Wins - Losses - Ties bzw. Siege - Niederlagen - Unentschieden. Aufzeichnungen darüber sind ein Teil der Torhüterstatistiken und werden in jedem Spiel denjenigen Torwarten beider Teams zugesprochen, die sich zum Zeitpunkt des Gamewinning Goals auf dem Eis befinden. Die gesamte Statistik dazu wird im Allgemeinen als Record (im Sinne von Aufzeichnung) bezeichnet.</p>
+				</div>
+			</div>
+
+			<!-- Z -->
+			<div class="gesReihe B clearfix" id="z">
+				<div class="Vorspalte">
+					<h3>Z</h3>
+				</div>
+				<div class="spalte">
+					<h2>Zamboni</h2>
+					<div class="Strich">
+					</div>
+					<p>Die Eisreinigungsmaschine. Bei Zamboni handelt es sich eigentlich um einen Hersteller, der jedoch Dank seiner Pionierarbeit Marktführer in diesem Segment ist, sodass der Firmenname zum Allgemeingut wurde.</p>
+				</div>
+
+				<div class="spalte">
+					<h2>Zone</h2>
+					<div class="Strich">
+					</div>
+					<p>Durch die blauen Linien wird das Spielfeld in drei Abschnitte, sogenannte Zonen unterteilt: vom jeweils eigenen Tor einer Mannschaft ausgehend unterscheidet man die Verteidigungszone, die neutrale Zone und die Angriffszone.</p>
+				</div>
+			</div>
+
 		</main>
 	
 	</body>
